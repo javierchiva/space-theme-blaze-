@@ -14,12 +14,12 @@
           </div>
         {% endfor %}
 
-
-        <button type="button" class="inline-flex items-center text-base text-gray-500 hover:text-gray-900">
-          {{ link.title }}
-          {% render 'icon-dropdown' %}
-        </button>
-
+        <div class="ml-2 relative">
+          <button type="button" class="inline-flex items-center text-base text-gray-500 hover:text-gray-900">
+            {{ link.title }}
+            {% render 'icon-dropdown' %}
+          </button>
+        </div>
       </nav>
 
       <div class="hidden md:flex items-center justify-end md:flex-1 space-x-5">
