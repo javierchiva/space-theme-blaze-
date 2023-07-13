@@ -5,8 +5,7 @@
       <div class="flex justify-start lg:flex-1 truncate">
         <h1 class="text-xl font-bold truncate">{{ shop.name }}</h1>
       </div>
-
-       <div class="-mr-2 -my-2 ml-3 md:hidden">
+         <div class="-mr-2 -my-2 ml-3 md:hidden">
             <button type="button" class="bg-white p-2 inline-flex items-center justify-center focus:outline-none">
                 INSERT ICON HERE
             </button>
@@ -21,11 +20,14 @@
                   {{ link.title }}
                   {% render 'icon-dropdown' %}
                 </button>
-                <div x-show="open" @click.away="open = false" class="absolute z-10 -ml-5 mt-5 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+
+                <!-- STEP 1: Place the div under the button tag -->
+
+                    <div x-show="open" @click.away="open = false" class="absolute z-10 -ml-5 mt-5 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                     <div class="shadow-lg border ring-black ring-opacity-5 overflow-hidden rounded-lg">
                         <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                            {% for childlink linklists[child_list_handle].links %}
-                                 <a href="{{ Sublink.title }}" class="-m-3 p-3 flex items start rounded-lg hover:bg-gray-100">
+                            {% for Sublink in link.links %}
+                                 <a href="{{ childlink.url }}" class="-m-3 p-3 flex items start rounded-lg hover:bg-gray-100">
                                     <div class="ml-4">
                                     <p class="text-gray-900 text-base font-medium">
                                        {{ Sublink.title }}
