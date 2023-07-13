@@ -1,4 +1,4 @@
-{% assign mein_menu_linklist = linklist[section.settings.menu] %}
+{% assign mein_menu_linklist = linklist[section.settings.menu].links %}
 
   <div class="relative bg-white" x-data="{mobileMenuOpen: true}">
   <div class="mx-auto px-4 sm:px-6">
@@ -80,7 +80,7 @@
         <!-- NAVIGATION LINKS FOR MOBILE MENU -->
         <div class="pt-3">
           <nav class="grid gap-y-7">
-            {% for link in linklists.main-menu.links %}
+            {% for link in main_menu_linklist %}
               {% assign link_handle = link.handle | replace: '-', '_' %}
               {% if link.links != blank %}
                 <div x-data="{ {{ link_handle }} : false }" class="relative">
