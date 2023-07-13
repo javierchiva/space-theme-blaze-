@@ -83,11 +83,19 @@
             <!-- NAVIGATION LINKS FOR MOBILE MENU -->
             <div class="pt-3">
                 <nav class="grid gap-y-7">
+                    {% for link in linklists.main-menu.links %}
+                        {% if kink.links != blank %}
+                            
+                        {% else %}
+                            <a href="#" class="-m-3 p-3 flex items-center rounded-md text-gray-500 hover:text-gray-900 hover:bg-gray-50">
+                           {{link.title}}
+                            </a>
+                            
+                        {% endif %}
+                        
+                    {% endfor %}
 
-
-                    <a href="#" class="-m-3 p-3 flex items-center rounded-md text-gray-500 hover:text-gray-900 hover:bg-gray-50">
-                        LINK ITEM
-                    </a>
+                    
 
                     <a href="#" class="-m-3 p-3 flex items-center rounded-md text-gray-500 hover:text-gray-900 hover:bg-gray-50">
                         LINK ITEM
