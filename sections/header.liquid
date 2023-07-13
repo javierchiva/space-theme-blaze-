@@ -23,7 +23,7 @@
                     <div class="shadow-lg border ring-black ring-opacity-5 overflow-hidden rounded-lg">
                         <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                             {% for Sublink in link.links %}
-                                 <a href="contact" class="-m-3 p-3 flex items start rounded-lg hover:bg-gray-100">
+                                 <a href="{{ link.url }}" class="-m-3 p-3 flex items start rounded-lg hover:bg-gray-100">
                                     <div class="ml-4">
                                     <p class="text-gray-900 text-base font-medium">
                                        {{ Sublink.title }}
