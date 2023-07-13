@@ -1,4 +1,6 @@
-<div class="relative bg-white" x-data="{mobileMenuOpen: true}">
+{% assign mein_menu_linklist = linklist[section.settings.menu] %}
+
+  <div class="relative bg-white" x-data="{mobileMenuOpen: true}">
   <div class="mx-auto px-4 sm:px-6">
     <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
       <!-- STORE NAME / STORE LOGO -->
