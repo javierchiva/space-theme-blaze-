@@ -1,4 +1,5 @@
 {% assign main_menu_linklist = linklists[section.settings.menu].links %}
+{% assign mobile_menu_linklist = linklists[section.settings.mobile-menu].links %}
 
   <div class="relative bg-white" x-data="{mobileMenuOpen: true}">
   <div class="mx-auto px-4 sm:px-6">
@@ -80,7 +81,7 @@
         <!-- NAVIGATION LINKS FOR MOBILE MENU -->
         <div class="pt-3">
           <nav class="grid gap-y-7">
-            {% for link in main_menu_linklist %}
+            {% for link in mobile_main_menu_linklist %}
               {% assign link_handle = link.handle | replace: '-', '_' %}
               {% if link.links != blank %}
                 <div x-data="{ {{ link_handle }} : false }" class="relative">
@@ -130,7 +131,15 @@
         "label": "Header Menu",
         "default": "main-menu",
         "info": "Select the menu"
+      }, {
+        "type": "link_list",
+        "id": "mobile-menu",
+        "label": "Mobile Menu",
+        "default": "main-menu",
+        "info": "Select the menu"
       }
     ]
   }
 {% endschema %}
+
+mobile
