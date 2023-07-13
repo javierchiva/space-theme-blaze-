@@ -16,10 +16,12 @@
                     Link +
                 </button>
              </div>
-            {% endif %}
-            <div class="relative">
-        <a href="{{ link.url }}" class="text-base text-gray-500 hover:text-gray-900 {%if link.active == true%}text-red-900{%endif%}"> {{ link.title }} </a>
+            {% else %}
+                <div class="relative">
+                   <a href="{{ link.url }}" class="text-base text-gray-500 hover:text-gray-900 {%if link.active == true%}text-red-900{%endif%}"> {{ link.title }} </a>
              </div>
+            {% endif %}
+            
         {% endfor %}
         
   </nav>
