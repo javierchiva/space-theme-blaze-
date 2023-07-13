@@ -1,4 +1,4 @@
-<div class="relative bg-white" x-data="{mobileMenuOpen: true }">
+<div class="relative bg-white" x-data="{mobileMenuOpen: false }">
   <div class="mx-auto px-4 sm:px-6">
     <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
       <!-- STORE NAME / STORE LOGO -->
@@ -64,7 +64,7 @@
     </div>
   </div>
   <!-- MOBILE MENU CONTAINER -->
-<div class="absolute z-10 top-0 inset-x-0 p-2 transform origin-top-left md:hidden">
+<div x-show="monileMenuOpen" class="absolute z-10 top-0 inset-x-0 p-2 transform origin-top-left md:hidden">
     <div class="shadow-lg rounded-lg ring-1 ring-black ring-opacity-5 bg-white w-full">
         <div class="p-5 divide-y-2 divide-gray-50">
 
@@ -74,7 +74,7 @@
                     <h1 class="text-lg text-gray-500"> {{ shop.name}}</h1>
                 </div>
                 <div class="-mr-2">
-                    <button x-on:click="mobileMenuOpen" type="button" class="bg-white rounded-md p-2 text-gray-500">
+                    <button x-on:click="mobileMenuOpen = false" type="button" class="bg-white rounded-md p-2 text-gray-500">
                        {% render 'icon-close' %}
                     </button>
                 </div>
