@@ -5,4 +5,8 @@
   {{ article.published_at | date: '%d-%m-%Y' }}
 </time>
 
-<img src="{{ article.image | img_url: 'large' }}" alt="">
+<img src="{{ article.image | img_url: 'large' }}" alt=" {{ article.image.alt }} ">
+
+<div class="">
+  {{ article.content }}
+</div>
