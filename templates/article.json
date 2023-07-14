@@ -2,10 +2,12 @@
   "sections": {
     "template": {
       "type": "template-article",
-      "settings": {
-        "enable_autor": true,
-        "enable_published_date": false
-      }
+      "blocks": {
+             "title" : {
+                "type": "article_title"
+             }
+      },
+      "block_order": ["title"]
     }
   },
   "order": [
