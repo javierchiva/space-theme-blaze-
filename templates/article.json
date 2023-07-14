@@ -11,10 +11,16 @@
              },
              "published_date" : {
                 "type": "article_publishied_date"
-             }
+             },
 
-      },
-      "block_order": ["title"]
+             "thumbnail": {
+                "type": "featured_image"
+             },
+             "content": {
+                "type": "article_content"
+             }
+         },
+      "block_order": ["title", "author", "published_date","thumbnail","content" ]
     }
   },
   "order": [
