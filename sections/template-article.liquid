@@ -10,3 +10,23 @@
 <div class="">
   {{ article.content }}
 </div>
+
+{% schema %}
+  {
+    "name": "Template Article",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_autor",
+        "default": true,
+        "label": "Display Author Name"
+      }, {
+        "type": "checkbox",
+        "id": "enable_published_date",
+        "default": "true",
+        "label": "Display Published Date"
+
+      }
+    ]
+  }
+{% endschema %}
