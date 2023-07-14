@@ -3,6 +3,8 @@
     "template": {
       "type": "template-article",
       "settings": {
+        "enable_autor": true,
+        "enable_published_date": false
       }
     }
   },
