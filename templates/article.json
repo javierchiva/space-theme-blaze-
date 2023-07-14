@@ -8,7 +8,11 @@
              },
              "author": {
                 "type": "article_author"
+             },
+             "published_date" : {
+                "type": "article_publishied_date"
              }
+
       },
       "block_order": ["title"]
     }
