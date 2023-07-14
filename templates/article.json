@@ -5,6 +5,9 @@
       "blocks": {
              "title" : {
                 "type": "article_title"
+             },
+             "author": {
+                "type": "article_author"
              }
       },
       "block_order": ["title"]
