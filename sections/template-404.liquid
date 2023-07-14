@@ -5,6 +5,14 @@
       {{ section.settings.subtext_text }}
     </p>
   </div>
+  <div class="div my-4">
+    {% if section.settings.buttonurl == blank %}
+      {% assign shop_url = shop.secure_url %}
+    {% else %}
+      {% assign shop_url = section.settings.button_label %}
+    {% endif %}
+    <a href="{{ shop_url}}"></a>
+  </div>
 </div>
 
 
@@ -25,6 +33,15 @@
         "default": "Thepage that you're looking for is not found",
         "label": "404 Subtext title"
 
+      }, {
+        "type": "text",
+        "id": "button_label",
+        "default": "Back to homepage",
+        "label": "Button label"
+      }, {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button URL"
       }
 
     ]
