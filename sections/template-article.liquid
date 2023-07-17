@@ -52,7 +52,12 @@
 </article>
 
 {% if blog.comments_enable? %}{% endif %}
-hello word
+<div id="comments" class="my-8">
+  {% if article.comments_count > 0 %}
+    {% else %}
+      There are no commnents in this article
+  {% endif %}
+</div>
 {% schema %}
   {
     "name": "Template Article",
