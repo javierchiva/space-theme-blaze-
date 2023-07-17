@@ -20,7 +20,7 @@
       <div class="flex items-center justify-center">
         <div class="max-w-7xl text-center">
           {% if section.settings.enable_published_date %}
-            <time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">
+            <time datetime="{{ article.published_at | date: format: 'on_date' }}">
               {{ article.published_at | date: '%d-%m-%Y' }}
             </time>
           {% endif %}
