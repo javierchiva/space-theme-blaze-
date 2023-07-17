@@ -51,9 +51,8 @@
   {% endfor %}
 </article>
 
-{% if blog.comments_enable? %}
+{% if blog.comments_enabled? %}
   <div id="comments" class="my-8">
-    There are no commnents in this articl
     {% if article.comments_count > 0 %}
       {% else %}
         There are no commnents in this article
