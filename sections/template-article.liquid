@@ -51,8 +51,8 @@
   {% endfor %}
 </article>
 
-
-
+{% if blog.comments_enable? %}{% endif %}
+hello word
 {% schema %}
   {
     "name": "Template Article",
