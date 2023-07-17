@@ -53,11 +53,13 @@
 
 {% if blog.comments_enable? %}
   <div id="comments" class="my-8">
+    There are no commnents in this articl
     {% if article.comments_count > 0 %}
       {% else %}
         There are no commnents in this article
     {% endif %}
   </div>
+
   <div id="comment_form" class="mb-8">
     {% form 'new_comment', article %}
       <div class="flex-1 mx-auto itemns-center justify-center max-w-4xl px-4">
