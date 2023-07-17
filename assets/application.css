@@ -640,6 +640,10 @@ video {
   display: none;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -1039,6 +1043,10 @@ video {
 
   .md\:w-1\/2 {
     width: 50%;
+  }
+
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:flex-1 {
