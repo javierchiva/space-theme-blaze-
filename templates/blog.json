@@ -3,6 +3,7 @@
     "template": {
       "type": "template-blog",
       "settings": {
+        "number_of_blogs_post": 2
       }
     }
   },
