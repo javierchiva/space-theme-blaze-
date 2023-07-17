@@ -8,11 +8,14 @@
           <h1 class="text-4xl md:text-6xl font-medium">{{ article.title }}</h1>
         </div>
       </div>
-
       {% when 'article_author' %}
-      {% if section.settings.enable_autor %}
-        <small>{{ article.author }}</small>
-      {% endif %}
+      <div class="flex items-center justify-center">
+        <div class="text-center max-w-7xl">
+          {% if section.settings.enable_autor %}
+            <small>{{ article.author }}</small>
+          {% endif %}
+        </div>
+      </div>
       {% when 'article_published_date' %}
       {% if section.settings.enable_published_date %}
 
