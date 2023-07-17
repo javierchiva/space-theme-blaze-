@@ -41,8 +41,10 @@
       </div>
 
       {% when 'article_content' %}
-      <div class="">
-        {{ article.content }}
+      <div class="flex items-center justify-center">
+        <div class="max-w-7x1">
+          {{ article.content }}
+        </div>
       </div>
   {% else %}
     {% endcase %}
