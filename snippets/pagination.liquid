@@ -1,4 +1,3 @@
-  {% if paginate.pages > 1 %}
-            {{ paginate | default_pagination }}
-          {% endif %}
-        {% endpaginate %}
+{% if paginate.pages > 0 %}
+  {{ paginate | default_pagination }}
+{% endif %}
