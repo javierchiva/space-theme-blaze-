@@ -4,7 +4,7 @@
       "type": "template-blog",
       "settings": {
         "blog_read_more": "Read more",
-        "number_of_blogs_post": 2
+        "number_of_blogs_post": 1
       }
     }
   },
