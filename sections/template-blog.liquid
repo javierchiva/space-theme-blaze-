@@ -10,11 +10,16 @@
           <div class="w-full py-6 px-3">
             <div class="bg-white shadow-xl rounded-lg overflow-hidden">
               {% if article.image %}
-                <img src="{{ article.image | img_url: 'medium' }}" alt=" {{ article.image.alt }} ">
+                <a href=" {{ article.url  }} ">
+                  <img
+                    class="w-full h-80 object-cover"
+                    src="{{ article.image | img_url: 'medium' }}"
+                    alt=" {{ article.image.alt }} ">
+                </a>
               {% else %}
-                {{ 'image' | placeholder_svg_tag: 'w-20' }}
+                {{ 'image' | placeholder_svg_tag: 'w-20 w-full h-80 object-cover bg-gray-100' }}
               {% endif %}
-              <h1>{{ article.title }}</h1>
+              <h1 class="text-xl font-medium my-4">{{ article.title }}</h1>
 
               {% if article.exerpt.size > 0 %}
                 <p>{{ article.excerpt | strip_html | truncatewords: 15 }}</p>
@@ -22,6 +27,9 @@
               {% else %}
                 <p>{{ article.content | strip_html | truncatewords: 15 }}</p>
               {% endif %}
+              <a href=" {{ article.url  }}" class="font-medium text-blue-600 hover: text-blue-800">
+                {{ section.settings.blog_read_more }}
+              </a>
             </div>
           </div>
         {% endfor %}
@@ -36,6 +44,11 @@
     "name": "Blog",
     "settings": [
       {
+        "type": "text",
+        "id": "blog_read_more",
+        "label": "Read more label",
+        "default": "Read more"
+      }, {
         "type": "range",
         "id": "number_of_blogs_post",
         "step": 1,
