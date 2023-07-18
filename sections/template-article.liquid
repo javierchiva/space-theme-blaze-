@@ -70,8 +70,8 @@
           {% endfor %}
 
       <div class="max-w-6xl mx-auto">
-       {% render 'pagination' %}
-      </div>
+      {% render 'pagination', pagination: paginate %}
+    </div>
       </div>
     {% else %}
       There are no comments in this article
