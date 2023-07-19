@@ -577,11 +577,6 @@ video {
   margin-bottom: 2.5rem;
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -704,6 +699,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-20 {
