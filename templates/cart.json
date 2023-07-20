@@ -8,21 +8,21 @@
           "settings": {
           }
         },
-        "015710ce-187c-4ab9-b1c4-2351f4fc5574": {
-          "type": "update_button",
+        "58a4c680-c190-42e6-ab1e-9f9a66af212f": {
+          "type": "checkout_button",
           "settings": {
           }
         },
-        "58a4c680-c190-42e6-ab1e-9f9a66af212f": {
-          "type": "checkout_button",
+        "015710ce-187c-4ab9-b1c4-2351f4fc5574": {
+          "type": "update_button",
           "settings": {
           }
         }
       },
       "block_order": [
         "bc4aee27-8e76-48bb-9433-26a68b26dab5",
-        "015710ce-187c-4ab9-b1c4-2351f4fc5574",
-        "58a4c680-c190-42e6-ab1e-9f9a66af212f"
+        "58a4c680-c190-42e6-ab1e-9f9a66af212f",
+        "015710ce-187c-4ab9-b1c4-2351f4fc5574"
       ],
       "settings": {
       }
