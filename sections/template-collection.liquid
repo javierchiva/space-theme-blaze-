@@ -1,0 +1,9 @@
+{% paginate collection.products by 6 %}
+  {% for products in collection.products %}
+    {% else %}
+      <p>There are no producs inside of this collections</p>
+  {% endfor %}
+
+  {% render 'pagination', pagination: paginate %}
+
+{% endpaginate %}
