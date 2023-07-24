@@ -2,8 +2,9 @@
   {% for product in collection.products %}
     {% if product.featured_image %}
         <img src="{{ product.featured_image | img_url: 'medum' }}" alt="{{ product.featured_image}}">
-      
-    {% endif %}
+      {% endif %}
+
+      <span> {{ product.vendor }} </span>
     <a href=" {{ product.url }}">
       {{ product.title }}</a>
   {% else %}
