@@ -8,7 +8,10 @@
                  <div class="border bg-white shadow-lg rounded-lg overflow-hidden">
                     <a href="{{ product.featured_image }}">
                        {% if product.featured_image %}
-                        <img src="{{ product.featured_image | img_url: 'medum' }}" alt="{{ product.featured_image}}">
+                       <div class="h-80 overflow-hidden">
+                         <img class="h-80 overflow-hidden" src="{{ product.featured_image | img_url: 'medum' }}" alt="{{ product.featured_image}}">
+                        </div>
+                         
                           {% endif %}
                        </a>
                         <span> {{ product.vendor }} </span>
