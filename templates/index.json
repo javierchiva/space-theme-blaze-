@@ -1,12 +1,14 @@
 {
-    "sections": {
-        "featured-collection":{
-            "type": "featured-collection",
-            "settings": {
-                "featured_collection": "all"
-            }
-        }
-
-    },
-    "order": ["featured_collection"]
+  "sections": {
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured Collections",
+        "featured_collections": "frontpage"
+      }
+    }
+  },
+  "order": [
+    "featured-collection"
+  ]
 }

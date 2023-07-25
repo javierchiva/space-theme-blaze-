@@ -5,8 +5,7 @@
         "type": "header",
         "settings": {
           "mobile_menu_title": "Development Shop",
-          "menu": "main-menu",
-          "mobile-menu": "footer"
+          "menu": "main-menu"
         }
       }
     },
