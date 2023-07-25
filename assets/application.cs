@@ -697,6 +697,10 @@ video {
   height: 20rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .h-screen {
   height: 100vh;
 }
