@@ -3,16 +3,17 @@
     <div class="max-6xl mx-auto justify-center flex items-center px-4">
       <div class="flex px-1 mb-3">
         <div class="px-3 md:w-1/2">
-          <label for="contact_name">Name</label>
+          <label class="uppercase text-gray-500 font-medium" for="contact_name">Name</label>
           <input
+            class="border py-3 px-4 mb-3 text-gray-700 w-full"
             type="text"
             name="contact[name]"
             id="contact_name">
-
         </div>
         <div class="px-3 md:w-1/2">
-          <label for="conatct_email">Email address</label>
+          <label class="uppercase text-gray-500 font-medium" for="conatct_email">Email address</label>
           <input
+            class="border py-3 px-4 mb-3 text-gray-700 w-full"
             type="email"
             name="contact[email]"
             id="contact_email">
@@ -21,7 +22,8 @@
     </div>
 
 
-    <label for="contact_message">Message</label>
+
+    <label class="uppercase text-gray-500 font-medium" for="contact_message">Message</label>
     <textarea name="contact[body]" id="contact_message"></textarea>
 
     <input type="submit" value="Submit message  ">
