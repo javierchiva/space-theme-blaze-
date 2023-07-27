@@ -5,5 +5,7 @@
     alt="{{ media.preview_image.alt }}"
     class="w-full h-full object-cover">
   {% when 'external_video' %}
-  {{ media | external_video_tag: class: 'w-full h-80 object-cover' }}{% else %}
+  {{ media | external_video_tag: class: 'w-full h-80 object-cover' }}
+  {% when 'video' %}
+  {{ media | video_tag: controls: true, clas: 'w-full h-full object-cover ' }}{% else %}
 {% endcase %}
