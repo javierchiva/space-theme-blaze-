@@ -1,1 +1,14 @@
-hol
+<div class="max-w-6xl mx-auto my-8">
+  <div class="grid grid-cols-1 md:grid-col-2 gap-3">
+    <div class="product--medias">
+      <div class="hidden md:block">
+        {% for media in product.media %}
+          {% render 'product-media' %} %}
+
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="product--information"></div>
+  </div>
+</div>
