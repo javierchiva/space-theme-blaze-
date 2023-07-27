@@ -3,6 +3,8 @@
   <img
     src="{{ media | img_url: 'large' }}"
     alt="{{ media.preview_image.alt }}"
-    class="w-full h-full object-cover">{% else %}
+    class="w-full h-full object-cover">
+  {% when 'external_video' %}
+  {{ media | esternal_vieo_tag: class= 'w-full h-80 object-cover' }}{% else %}
 
 {% endcase %}
