@@ -1320,6 +1320,10 @@ video {
     margin-bottom: 4rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
   }
