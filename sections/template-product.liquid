@@ -79,14 +79,25 @@
         </div>
 
         <div class="my-3">
-          {% unles product.has_only_default_variant %}
+          {% unless product.has_only_default_variant %}
             <div data-url="{{ product.url }}" data-section="{{ section.id }}">
               {% for option in product.options_with_values %}
-                <label for="Option-{{ section.id }}">
+                <label for="Option-{{ section.id }}-{{ forloop.index0 }}">
                   {{ option.name }}</label>
+
+                <div class="my-2">
+                  <select
+                    name="options[{{ option.name | escape }}]"
+                    id="Option-{{ section.id }}-{{ forloop.index0 }}"
+                    class="w-full">
+                    {% for value in option.values %}
+                      <option value="{{ value | escape }}">{{ value }}</option>
+                    {% endfor %}
+                  </select>
+                </div>
               {% endfor %}
             </div>
-          {% endunles %}
+          {% endunless %}
         </div>
       {% endform %}
     </div>
