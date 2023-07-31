@@ -9,7 +9,7 @@
         "variant_selector": { "type": "variant_selector" },
         "quantity": { "type": "quantity" },
         "description": { "type": "description" },
-        "checkout_buttons": { "type": "checkout_buttons" },
+        "checkout_buttons": { "type": "checkout_buttons" }
       },
       "block_order": [
         "vendor",
@@ -23,3 +23,4 @@
     }
   },
   "order":["template"]
+}
