@@ -11,15 +11,4 @@
         "description": { "type": "description" },
         "checkout_buttons": { "type": "checkout_buttons" },
       },
-    "43d11833-d076-49d4-bf7e-ca5552152ae5": {
-      "type": "contact-form",
-      "settings": {
-        "title": "Contact Us"
-      }
-    }
-  },
-  "order": [
-    "template",
-    "43d11833-d076-49d4-bf7e-ca5552152ae5"
-  ]
-}
+ 
