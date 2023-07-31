@@ -791,6 +791,10 @@ video {
   flex: 1 1 0%;
 }
 
+.flex-auto {
+  flex: 1 1 auto;
+}
+
 .table-auto {
   table-layout: auto;
 }
