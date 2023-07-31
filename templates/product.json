@@ -11,4 +11,15 @@
         "description": { "type": "description" },
         "checkout_buttons": { "type": "checkout_buttons" },
       },
- 
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_selector",
+        "quantity",
+        "description",
+        "checkout_buttons"
+      ]
+    }
+  },
+  "order":["template"]
