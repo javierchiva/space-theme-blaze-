@@ -4,7 +4,11 @@
       <h1 class="text-center text-3xl font-bold mt-6">Sign in to your account</h1>
     </div>
     <div class="mt-8">
-      {% if shop.checkuot.guest_login %}{% endif %}
+      {% if shop.checkuot.guest_login %}
+        Guest checkout is allowed
+
+
+      {% endif %}
       {% form 'customer_login' %}
         {% if form.errors %}
           <div class="relative border border-red-400 bg-red-100 text-red 700 px-4 py-3" role="alert">
