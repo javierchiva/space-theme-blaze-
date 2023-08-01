@@ -2,6 +2,23 @@
     <div class="max-w-md w-full space-y-8">
         <h1 class="text-center text-3xl font-bold mt-6">Sign in to your account</h1>
     </div>
+    <div class="mt-8">
+        {% form 'customer_login' %}
+            <div class="my-2">
+                <label for="email_address">Email address</label>
+                <input type="email"
+                name="customer[email]"
+                id="email_address"
+                autocomplete="email"
+                class="relative block w-full px-3 py-2 border"
+                placeholder="Email address"
+
+                >
+
+            </div>
+
+        {% endform %}    
+    </div>
     <div class="max-w-md w-full space-y-8">
 
 
