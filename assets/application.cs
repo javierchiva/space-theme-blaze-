@@ -1604,6 +1604,10 @@ video {
     margin-left: 0px;
   }
 
+  .lg\:h-80 {
+    height: 20rem;
+  }
+
   .lg\:max-w-7xl {
     max-width: 80rem;
   }
