@@ -17,7 +17,16 @@
                       class="w-full min-80 bg-gry-200 rounded-md overflow-hidden lg:h-80"
                       src="{{ order.line_items.first.image | img_url: 'medium' }}"
                       alt="order.line_items.first.image.alt">
+                  {% else %}
+                    {{ 'product-1' | placeholder_svg_tag: 'w-full h-full object-center object-cover' }}
                   {% endif %}
+                </div>
+
+                <div class="mt-4 flex items-start justify-between">
+                  <div>
+                    <h3 class="text-sm text-gray-700">{{ order.name | link_to: order.customer_url }}</h3>
+                  </div>
+
                 </div>
               </div>
             {% endfor %}
